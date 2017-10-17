@@ -8,7 +8,7 @@
 			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 		</ul>
 <ul class="nav navbar-nav navbar-right">
-<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Kembali</a></li>
 </ul>
 		
     </div>

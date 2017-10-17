@@ -15,6 +15,7 @@ $r=mysqli_fetch_array($cek_lagi);
 // Apabila username dan password ditemukan
 if ($ketemu > 0){
   session_start();
+  $_SESSION['id']      = $r['uid'];
   $_SESSION['uid']     	= $r['uid'];
   $_SESSION['namauser']     = $r['nama'];
   $_SESSION['passuser']     = $r['pass'];

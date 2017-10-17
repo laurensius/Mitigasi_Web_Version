@@ -38,9 +38,12 @@
 			<center>
 			<?php
 				session_start();
-				if(isset($_SESSION['msg'])){
-					echo $_SESSION['msg'];
-					unset($_SESSION['msg']);
+				// if(isset($_SESSION['msg'])){
+				// 	echo $_SESSION['msg'];
+				// 	unset($_SESSION['msg']);
+				// }
+				if(isset($_SESSION['id'])){
+					header('Location: http://localhost/mitigasi/chat/user/index.php');
 				}
 			?>
 			</center>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-// error_reporting(0);
+error_reporting(0);
 include "config/koneksi.php";
 setlocale(LC_ALL, 'id_ID.UTF8', 'id_ID.UTF-8', 'id_ID.8859-1', 'id_ID', 'IND.UTF8', 'IND.UTF-8', 'IND.8859-1', 'IND', 'Indonesian.UTF8', 'Indonesian.UTF-8', 'Indonesian.8859-1', 'Indonesian', 'Indonesia', 'id', 'ID', 'en_US.UTF8', 'en_US.UTF-8', 'en_US.8859-1', 'en_US', 'American', 'ENG', 'English');
 date_default_timezone_set("Asia/Jakarta");
@@ -43,6 +43,8 @@ $nm_user=$_SESSION['namauser'];
 $photo=$_SESSION['photo'];
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,134 +107,17 @@ $photo=$_SESSION['photo'];
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
            <?php
-						if(!empty($_SESSION['namauser']))
-						{
-					?>
-         
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                       
-                       <!-- <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">-->
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
-          </li>
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-user text-red"></i> You changed your username
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
-          <?php } ?>
-          <li>
-          <a href="login.php"><i class="fa fa-sign-in"> Login</i></a></li>
-<li>
-          <a href="register.php"><i class="fa fa-sign-out"> Daftar</i></a></li>
+					if(empty($_SESSION['namauser']) || $_SESSION['level']=="admin"){ 
+            echo '     
+            <li>
+              <a href="login.php"><i class="fa fa-sign-in"> Login</i></a>
+            </li>
+            <li>
+              <a href="register.php"><i class="fa fa-sign-out"> Daftar</i></a>
+            </li>';
+          }
+           ?>
+
 
           <!-- Tasks: style can be found in dropdown.less -->
           
@@ -240,19 +125,26 @@ $photo=$_SESSION['photo'];
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <!--  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">-->
+
               <?php
+
+                if($_SESSION['level']=="user"){
                   $user=mysqli_query($mysqli,"select * from user where uid='$id_user'");
                   while($rowuser=mysqli_fetch_array($user)) {
                       echo "<img src='" . $rowuser['photo'] . "' class='user-image' alt='User Image'>";
                     
                   }
+                }
                   ?>
-              <span class="hidden-xs"> <?php
-                
-                $a=mysql_fetch_array(mysql_query("SELECT * FROM user WHERE nama='$_SESSION[namauser]'"));
-                echo "$a[nama]";
-                echo "$nm_user";
-              ?></span>
+              <span class="hidden-xs"> 
+                <?php
+                if($_SESSION['level']=="user"){
+                  $a=mysql_fetch_array(mysql_query("SELECT * FROM user WHERE nama='$_SESSION[namauser]'"));
+                  echo "$a[nama]";
+                  echo "$nm_user";
+                }
+                ?>
+              </span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -306,19 +198,24 @@ $photo=$_SESSION['photo'];
       <div class="user-panel">
         <div class="pull-left image">
           <?php
+
+                if($_SESSION['level']=="user"){
                   $user=mysqli_query($mysqli,"select * from user where uid='$id_user'");
                   while($rowuser=mysqli_fetch_array($user)) {
                       echo "<img src='" . $rowuser['photo'] . "' class='img-circle' alt='User Image'>";
                     
                   }
-                  ?>
+                }
+          ?>
         </div>
         <div class="pull-left info">
           <p> <?php
                 
+                if($_SESSION['level']=="user"){
                 $a=mysql_fetch_array(mysql_query("SELECT * FROM user WHERE nama='$_SESSION[namauser]'"));
                 echo "$a[nama]";
                 echo "$nm_user";
+              }
               ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
@@ -378,7 +275,7 @@ $photo=$_SESSION['photo'];
           </ul>
         </li>
           <?php
-						if(!empty($_SESSION['namauser']))
+						if(!empty($_SESSION['namauser'])  && $_SESSION['level']=="user")
 						{
 					?>
          
