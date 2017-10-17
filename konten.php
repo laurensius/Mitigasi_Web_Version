@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+// error_reporting(0);
 include "config/koneksi.php";
 
 
@@ -150,6 +150,11 @@ elseif ($_GET['mod']=='pesan_grup'){
   if ($_SESSION['level']=='user'){
     include "pesan_grup.php";
   }
+}
+elseif ($_GET['mod']=='detailnotif'){
+  
+    include "detailnotif.php";
+  
 }
 else{
   echo "<p><b>MODUL BELUM ADA ATAU BELUM LENGKAP</b></p>";

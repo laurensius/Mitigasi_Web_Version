@@ -1,7 +1,7 @@
         <?php
         $server = "localhost";
 $username = "root";
-$password = "";
+$password = "laurens23";
 $database = "db_mitigasi";
 
 // Koneksi dan memilih database di server
