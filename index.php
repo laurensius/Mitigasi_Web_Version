@@ -242,7 +242,7 @@ $photo=$_SESSION['photo'];
          
         </li>
      
-        <li class="treeview">
+        <!-- <li class="treeview">
           <a href="?mod=panduan">
             <i class="fa fa-rss"></i>
             <span>Panduan Bencana</span>
@@ -256,7 +256,7 @@ $photo=$_SESSION['photo'];
             <li><a href="?mod=gempa"><i class="fa fa-check"></i> Gempa Bumi</a></li>
             <li><a href="?mod=tsunami"><i class="fa fa-check"></i> Tsunami</a></li>
           </ul>
-        </li>
+        </li> -->
           
         
           <li class="active treeview">
@@ -270,8 +270,9 @@ $photo=$_SESSION['photo'];
          <ul class="treeview-menu">
             <li><a href="?mod=peta_rawan"><i class="fa fa-check"></i> Rawan Banjir</a></li>
             <li><a href="?mod=peta_rawan_gunung"><i class="fa fa-check"></i> Rawan Gunung Meletus</a></li>
-            <li><a href="?mod=peta_gempa"><i class="fa fa-check"></i> Rawan Gempa Bumi</a></li>
-            <li><a href="?mod=peta_longsor"><i class="fa fa-check"></i> Longsor</a></li>
+            <li><a href="?mod=peta_kekeringan"><i class="fa fa-check"></i> Rawan Gempa Bumi</a></li>
+            <li><a href="?mod=peta_longsor"><i class="fa fa-check"></i> Rawan Longsor</a></li>
+            <li><a href="?mod=peta_kebakaran_hutan"><i class="fa fa-check"></i> Kebakaran Hutan dan Lahan</a></li>
           </ul>
         </li>
           <?php

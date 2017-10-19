@@ -46,9 +46,9 @@
         echo "<td>".$result->kronologis."</td>";
         echo "</tr>";
         if($result->foto!=""){
-          echo "<td><b>Kronologis</b></td>";
-          echo "<td>".$result->foto."</td>";
-          echo "</tr>";   
+          echo "<td><b>Gambar</b></td>";
+          echo "<td><img class='img img-responsive' src='admin/gambar/".$result->foto."'></td>";
+          echo "</tr>";     
         }
         echo "</table>"; 
       }
@@ -64,7 +64,7 @@
         echo "</tr>";
         if($result->gambar!=""){
           echo "<td><b>Gambar</b></td>";
-          echo "<td><img src='/admin/gambar/".$result->gambar."'></td>";
+          echo "<td><img class='img img-responsive'  src='admin/gambar/".$result->gambar."'></td>";
           echo "</tr>";   
         }
         echo "</table>"; 

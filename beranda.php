@@ -227,7 +227,7 @@ if ($sesi_username != NULL || !empty($sesi_username) ||$_SESSION['level']=='user
           </a>
          
         </li>
-       <li class="treeview">
+      <!--  <li class="treeview">
           <a href="#">
             <i class="fa fa-rss"></i>
             <span>Panduan Bencana</span>
@@ -241,7 +241,7 @@ if ($sesi_username != NULL || !empty($sesi_username) ||$_SESSION['level']=='user
             <li><a href="?mod=gempa"><i class="fa fa-check"></i> Gempa Bumi</a></li>
             <li><a href="?mod=tsunami"><i class="fa fa-check"></i> Tsunami</a></li>
           </ul>
-        </li>
+        </li> -->
           
         
           <li class="active treeview">
@@ -255,8 +255,9 @@ if ($sesi_username != NULL || !empty($sesi_username) ||$_SESSION['level']=='user
          <ul class="treeview-menu">
             <li><a href="?mod=peta_rawan"><i class="fa fa-check"></i> Rawan Banjir</a></li>
             <li><a href="?mod=peta_rawan_gunung"><i class="fa fa-check"></i> Rawan Gunung Meletus</a></li>
-            <li><a href="?mod=peta_gempa"><i class="fa fa-check"></i> Rawan Gempa Bumi</a></li>
-            <li><a href="?mod=peta_longsor"><i class="fa fa-check"></i> Longsor</a></li>
+            <li><a href="?mod=peta_kekeringan"><i class="fa fa-check"></i> Rawan Kekeringan</a></li>
+            <li><a href="?mod=peta_longsor"><i class="fa fa-check"></i> Rawan Longsor</a></li>
+            <li><a href="?mod=peta_kebakaran_hutan"><i class="fa fa-check"></i> Kebakaran Hutan dan Lahan</a></li>
           </ul>
         </li>
         

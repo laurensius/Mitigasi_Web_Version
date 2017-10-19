@@ -72,9 +72,14 @@ elseif ($_GET['mod']=='peta_rawan'){
     include "peta_rawan.php";
   
 }
-elseif ($_GET['mod']=='peta_gempa'){
+elseif ($_GET['mod']=='peta_kekeringan'){
   
-    include "peta_gempa.php";
+    include "peta_kekeringan.php";
+  
+}
+elseif ($_GET['mod']=='peta_kebakaran_hutan'){
+  
+    include "peta_kebakaran_hutan_lahan.php";
   
 }
 elseif ($_GET['mod']=='peta_longsor'){
