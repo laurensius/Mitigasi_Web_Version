@@ -43,7 +43,7 @@
 				// 	unset($_SESSION['msg']);
 				// }
 				if(isset($_SESSION['id'])){
-					header('Location: http://localhost/mitigasi/chat/user/index.php');
+					header('Location: user/index.php');
 				}
 			?>
 			</center>

@@ -43,7 +43,6 @@ $nm_user=$_SESSION['namauser'];
 $photo=$_SESSION['photo'];
 $sesi_username      = isset($_SESSION['username']) ? $_SESSION['username'] : NULL;
 if ($sesi_username != NULL || !empty($sesi_username) ||$_SESSION['level']=='user'  )
-
 {
 
 ?>

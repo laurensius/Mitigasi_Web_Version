@@ -32,8 +32,8 @@
             <span class="info-box-icon bg-red"><i class="fa fa-map"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Peta Gempa</span>
-               <a href="?mod=peta_gempa" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+              <span class="info-box-text">Peta Rawan Kekeringan</span>
+               <a href="?mod=peta_kekeringan" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -73,11 +73,23 @@
         -->
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-map"></i></span>
+            <span class="info-box-icon bg-green"><i class="fa fa-map"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Peta Longsor</span>
+              <span class="info-box-text">Peta Rawan Longsor</span>
               <a href="?mod=peta_longsor" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-map"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Peta Rawan Kebakaran Hutan dan Lahan</span>
+               <a href="?mod=peta_kebakaran_hutan" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
             </div>
             <!-- /.info-box-content -->
           </div>

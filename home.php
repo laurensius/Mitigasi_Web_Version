@@ -1,7 +1,7 @@
    <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-book"></i></span>
 
@@ -15,19 +15,7 @@
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-white"><i class="fa fa-rss"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Panduan Bencana</span>
-               <a href="?mod=panduan" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-         <div class="col-md-6 col-sm-6 col-xs-12">
+         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-red"><i class="fa fa-map"></i></span>
 
@@ -71,7 +59,7 @@
           <!-- /.info-box 
         </div>
         -->
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-red"><i class="fa fa-newspaper-o"></i></span>
 

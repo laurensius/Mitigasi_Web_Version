@@ -59,7 +59,20 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
         <td>
           <div class="form-group">
         <div class="col-sm-7">
-        <input class="form-control" name="tempat"  id="tempat" type="text" size="30" />
+        <input class="form-control" name="tempat"  id="tempat" type="text" size="30" required/>
+        <!--  -->
+        <div class="row" style="margin-top:10px">
+          <div class="col-lg-6">
+            <input class="form-control" name="lat"  id="lat" type="text" size="30"  required/>
+          </div>
+          <div class="col-lg-6">
+            <input class="form-control" name="lon"  id="lon" type="text" size="30"  required/>
+          </div>
+          <div class="col-lg-12"  style="margin-top:10px">
+            <div id="map-canvas" style="height:400px"></div>
+          </div>  
+        </div>
+        <!--  -->
        </div>
      </div>
         </td>
@@ -197,4 +210,37 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
       showInputs: false
     });
   });
+</script>
+
+<!---by Rnz -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCprEkmn5_AWMYHETXDgLD2sBlipH8jZWo&sensor=true">
+</script>
+<script type="text/javascript">                        
+    window.onload = function() {
+        var curr_lat = -6.976000;
+        var curr_lng = 108.485831;
+        var latlng = new google.maps.LatLng(curr_lat,curr_lng);
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            center: latlng,
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        document.getElementById('lat').value = curr_lat;
+        document.getElementById('lon').value = curr_lng;
+
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: 'Geser Marker ini pada lokasi tempat wisata',
+            draggable: true
+        });
+
+        google.maps.event.addListener(marker, 'dragend', function(a) {
+              var curr_lat = a.latLng.lat().toFixed(6);
+              var curr_lng = a.latLng.lng().toFixed(6);
+              document.getElementById('lat').value = curr_lat;
+              document.getElementById('lon').value = curr_lng;
+        });
+    };
 </script>

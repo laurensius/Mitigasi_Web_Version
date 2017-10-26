@@ -12,6 +12,8 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
     $id_bencana = $_POST['bencana'];
    $tempat=$_POST['tempat'];
     $korban=$_POST['korban'];
+    $lat=$_POST['lat'];
+    $lon=$_POST['lon'];
     $file_gambar = $_FILES['file_gambar'];
     $kronologis = $_POST['kronologis'];
    // $long=$_POST['long'];
@@ -21,7 +23,7 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
   //print_r($imageName);
   
   $path = "gambar/";
-    $sql="INSERT INTO tbl_info_bencana VALUES('','$id_bencana','$tempat','$korban','$kronologis','$tgl','$image')";
+    $sql="INSERT INTO tbl_info_bencana VALUES('','$id_bencana','$tempat','$lat','$lon','$korban','$kronologis','$tgl','$image')";
     $res=mysql_query($sql);
    
     //copy gambar

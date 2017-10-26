@@ -41,10 +41,11 @@ function indonesian_date ($timestamp = '', $date_format = 'l, j F Y | H:i', $suf
 $id_user=$_SESSION['uid'];
 $nm_user=$_SESSION['namauser'];
 $photo=$_SESSION['photo'];
+if($_SESSION['level']=='user'){
+  header('location: beranda.php?mod=home_user');
+}
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -270,7 +271,7 @@ $photo=$_SESSION['photo'];
          <ul class="treeview-menu">
             <li><a href="?mod=peta_rawan"><i class="fa fa-check"></i> Rawan Banjir</a></li>
             <li><a href="?mod=peta_rawan_gunung"><i class="fa fa-check"></i> Rawan Gunung Meletus</a></li>
-            <li><a href="?mod=peta_kekeringan"><i class="fa fa-check"></i> Rawan Gempa Bumi</a></li>
+            <li><a href="?mod=peta_kekeringan"><i class="fa fa-check"></i> Rawan Kekeringan</a></li>
             <li><a href="?mod=peta_longsor"><i class="fa fa-check"></i> Rawan Longsor</a></li>
             <li><a href="?mod=peta_kebakaran_hutan"><i class="fa fa-check"></i> Kebakaran Hutan dan Lahan</a></li>
           </ul>

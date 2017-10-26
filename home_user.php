@@ -15,18 +15,7 @@
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-white"><i class="fa fa-rss"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Panduan Bencana</span>
-               <a href="?mod=panduan" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
+        
        <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-white"><i class="fa fa-user"></i></span>
@@ -86,7 +75,7 @@
         -->
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-bullhorn"></i></span>
+            <span class="info-box-icon bg-yellow"><i class="fa fa-bullhorn"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Info Bencana</span>
@@ -98,7 +87,7 @@
         </div>
        <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-newspaper-o"></i></span>
+            <span class="info-box-icon bg-blue"><i class="fa fa-newspaper-o"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Info Peringatan Dini</span>
@@ -110,7 +99,7 @@
         </div>
        <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-commenting"></i></span>
+            <span class="info-box-icon bg-black"><i class="fa fa-commenting"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Pesan Grup</span>
