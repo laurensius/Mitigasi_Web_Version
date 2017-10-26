@@ -16,8 +16,6 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
     $lon=$_POST['lon'];
     $file_gambar = $_FILES['file_gambar'];
     $kronologis = $_POST['kronologis'];
-   // $long=$_POST['long'];
-   // $lat=$_POST['lat'];
    $tgl  = gmdate("Y-m-d");
     $image=$_FILES['file_gambar']['name'];
   //print_r($imageName);
