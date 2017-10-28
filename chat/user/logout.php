@@ -1,5 +1,11 @@
 <?php
 	// session_start();
 	// session_destroy();
-	header('Location: ../../beranda.php?mod=home_user');
+	if($_SESSION['level'] == "admin"){
+		// header('Location: ../../admin/beranda.php?mod=home');
+		echo "dfsdf";
+	}else{
+		header('Location: ../../beranda.php?mod=home_user');
+	}
+	
 ?>

@@ -18,9 +18,9 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
     $kronologis = $_POST['kronologis'];
    $tgl  = gmdate("Y-m-d");
     $image=$_FILES['file_gambar']['name'];
-  //print_r($imageName);
+  //print_r($imageName);  
   
-  $path = "gambar/";
+    $path = "gambar/";
     $sql="INSERT INTO tbl_info_bencana VALUES('','$id_bencana','$tempat','$lat','$lon','$korban','$kronologis','$tgl','$image')";
     $res=mysql_query($sql);
    
