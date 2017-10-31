@@ -9,7 +9,9 @@
 	</div>
 </div>
 
+<?php include('password_modal.php'); ?>
 <?php include('out_modal.php'); ?>
+<?php include('modal.php'); ?>
 
 
 

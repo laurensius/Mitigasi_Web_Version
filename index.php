@@ -305,7 +305,7 @@ if($_SESSION['level']=='user'){
         </li>
          <li class="active treeview">
           <a href="?mod=info_mitigasi">
-            <i class="fa fa-newspaper-o"></i> <span>Info Mitigasi</span>
+            <i class="fa fa-newspaper-o"></i> <span>Info Peringatan Dini</span>
             
           </a>
          

@@ -15,7 +15,7 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
   //print_r($imageName);
   
   $path = "gambar/";
-    $sql="INSERT INTO tbl_peringatan_dini VALUES('','$isi','$image')";
+    $sql="INSERT INTO tbl_peringatan_dini VALUES('','$isi','$image','".date("Y-m-d H:i:s")."')";
     $res=mysql_query($sql);
    
     //copy gambar

@@ -127,10 +127,11 @@ elseif ($_GET['mod']=='info-bencana'){
   
 }
 elseif ($_GET['mod']=='info_berita'){
-  
+
     include "info_berita.php";
   
 }
+
 elseif ($_GET['mod']=='info_mitigasi'){
   
     include "info_mitigasi.php";

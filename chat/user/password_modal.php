@@ -44,10 +44,10 @@
 						<span class="input-group-addon" style="width:150px;">Nama Grup Chat:</span>
 						<input type="text" style="width:350px;" class="form-control" id="chat_name" required>
 					</div>
-					<div class="form-group input-group">
+					<!-- <div class="form-group input-group">
 						<span class="input-group-addon" style="width:150px;">Password:</span>
 						<input type="text" style="width:350px;" class="form-control" id="chat_password">
-					</div>
+					</div> -->
                 </div> 
 				</div>
                 <div class="modal-footer">

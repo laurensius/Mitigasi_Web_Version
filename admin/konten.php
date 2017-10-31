@@ -1,7 +1,7 @@
 <?php
 session_start();
 // error_reporting(0);
-include "config/koneksi.php";
+include "../config/koneksi.php";
 
 
 // Bagian Home

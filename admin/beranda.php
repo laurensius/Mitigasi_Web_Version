@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include "config/koneksi.php";
+include "../config/koneksi.php";
 setlocale(LC_ALL, 'id_ID.UTF8', 'id_ID.UTF-8', 'id_ID.8859-1', 'id_ID', 'IND.UTF8', 'IND.UTF-8', 'IND.8859-1', 'IND', 'Indonesian.UTF8', 'Indonesian.UTF-8', 'Indonesian.8859-1', 'Indonesian', 'Indonesia', 'id', 'ID', 'en_US.UTF8', 'en_US.UTF-8', 'en_US.8859-1', 'en_US', 'American', 'ENG', 'English');
 date_default_timezone_set("Asia/Jakarta");
 function indonesian_date ($timestamp = '', $date_format = 'l, j F Y | H:i', $suffix = 'WIB') {
@@ -138,7 +138,7 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
      echo " <li>
                     <a href='?mod=inbox&id=$id'>
                       <div class='pull-left'>
-                      <img src='../foto_lapm/". $r['gambar'] ."' class='user-image' alt='User Image'>
+                      <!--img src='../foto_lapm/". $r['gambar'] ."' class='user-image' alt='User Image'-->
                       </div>
                     
                       <p>" . $r['keterangan'] . "</p>
@@ -164,7 +164,7 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
               <?php
                   $user=mysqli_query($mysqli,"select * from user where uid='$id_user'");
                   while($rowuser=mysqli_fetch_array($user)) {
-                      echo "<img src='" . $rowuser['photo'] . "' class='user-image' alt='User Image'>";
+                      echo "<!--img src='" . $rowuser['photo'] . "' class='user-image' alt='User Image'-->";
                     
                   }
                   ?>
@@ -182,7 +182,7 @@ mysql_select_db($database) or die("Database tidak bisa dibuka");
                <?php
                   $user=mysqli_query($mysqli,"select * from user where uid='$id_user'");
                   while($rowuser=mysqli_fetch_array($user)) {
-                      echo "<img src='" . $rowuser['photo'] . "' class='img-circle' alt='User Image'>";
+                      echo "<!--img src='" . $rowuser['photo'] . "' class='img-circle' alt='User Image'-->";
                     
                   }
                   ?>
